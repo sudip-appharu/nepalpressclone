@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+.font-mukta {
+  font-family: "Mukta", sans-serif;
+}
+
+.scrollable {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(245, 71, 71) rgb(79, 108, 236);
+}
+
+.maintain-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.gradient-over-image {
+  position: absolute;
+  height: 70%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, black, transparent);
+}
+
+.text-over-gradient {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  z-index: 100;
+}
+
+.new-p {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+@media (max-width: 640px) {
+  .text-over-gradient {
+    position: absolute;
+    bottom: 7px;
+    left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    z-index: 100;
+  }
+
+  .new-p {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width :768px){
+   .text-over-gradient {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    z-index: 100;
+  }
+
+  .new-p {
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+}
