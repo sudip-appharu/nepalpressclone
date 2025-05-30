@@ -18,7 +18,7 @@ const Susasan = () => {
         <div className="w-full lg:w-[80%]">
           <Topics heading={`सुशासन प्रेस `} />
           <div>
-            <div className="flex flex-col lg:flex-row gap-y-5 lg:gap-x-5">
+            <div className="flex flex-col md:flex-row sm:flex-row sm:gap-x-5 md:gap-x-5 lg:flex-row gap-y-5 lg:gap-x-5">
               <div className="relative w-full lg:w-[26.25rem] h-auto lg:h-[25rem]">
                 <img
                   src={pokhara}

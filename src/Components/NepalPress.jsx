@@ -31,7 +31,7 @@ const NepalPress = () => {
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
               />
               <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-black to-transparent"></div>
-              <h1 className="absolute bottom-2 md:bottom-4 lg:left-4 left-[25%] text-sm md:text-lg lg:text-2xl sm:text-3xl text-center font-bold text-white">
+              <h1 className="absolute bottom-2 md:bottom-4 lg:left-4 left-[25%] text-sm md:text-4xl lg:text-2xl sm:text-3xl text-center font-bold text-white">
                 पहिरोले राप्ती राजमार्ग अवरुद्ध
               </h1>
             </div>

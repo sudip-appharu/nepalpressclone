@@ -12,7 +12,7 @@ const imagesAndText = ({
 }) => {
   return (
     <>
-      <div className="flexm sm:flex-row flex-col gap-y-5">
+      <div className="flexm flex-col gap-y-5">
         <div className="flex flex-col gap-y-3 mb-4">
           <div className="lg:w-[18.75rem] sm:h-[30vh]  w-full lg:h-[10.93rem]">
             <img src={image} alt="" className="maintain-image" />
@@ -27,7 +27,7 @@ const imagesAndText = ({
             <div className="w-[6.56rem] h-[5.62rem] shrink-0  ">
               <img src={image1} alt="" className="maintain-image" />
             </div>
-            <p className="lg:text-xl text-[1rem] font-[600] lg:font-[500] ">
+            <p className="lg:text-xl  text-[1rem] font-[600] lg:font-[500] ">
               {text1}
             </p>
           </div>

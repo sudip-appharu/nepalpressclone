@@ -15,7 +15,7 @@ const Representative = () => {
         </div>
 
         <div className="flex lg:gap-x-10 lg:flex-row gap-y-10 flex-col lg:justify-center">
-          <div className="flex sm:flex-row sm:gap-x-10">
+          <div className="flex sm:flex-row sm:gap-x-10 md:justify-between">
             <div className=" w-[16.68rem]">
               <div className="w-full h-[10.93rem] ">
                 <img src={ward} alt="" className="maintain-image" />
@@ -36,7 +36,7 @@ const Representative = () => {
             </div>
           </div>
 
-          <div className="flex sm:flex-row sm:gap-x-10">
+          <div className="flex sm:flex-row sm:gap-x-10 md:justify-between">
             <div className=" w-[16.68rem]">
               <div className="w-full h-[10.93rem] ">
                 <img src={election} alt="" className="maintain-image" />

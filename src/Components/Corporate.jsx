@@ -8,7 +8,7 @@ const Corporate = () => {
       <div className="flex flex-col gap-y-5 ">
         <Topics heading={`कर्पोरेट प्रेस `} />
         <div className="pb-4 border-b border-dotted border-gray-500">
-          <div className="w-[18.75rem] h-[13.75rem] relative   ">
+          <div className="w-[18.75rem] md:w-[50%] lg:h-[13.75rem] relative   ">
             <img src={citizens} alt="" className="maintain-image" />
             <div className="gradient-over-image"></div>
             <p className="text-over-gradient">

@@ -13,7 +13,6 @@ const KalaPress = () => {
         <Topics heading={`कला प्रेस `} />
         
         <div className="flex lg:flex-row flex-col gap-y-5 gap-x-5">
-          
           <div>
             <div className="lg:w-[31.875rem]  w-full lg:h-[37.5rem] relative">
               <img src={mahabhoj} alt="" className="maintain-image" />

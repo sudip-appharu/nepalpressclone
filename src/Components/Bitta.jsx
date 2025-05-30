@@ -15,7 +15,7 @@ const Bitta = () => {
           <Topics heading={`वित्त प्रेस`} />
           <div className="flex flex-col gap-y-6">
             <div>
-              <div className="flex flex-col lg:flex-row gap-x-5 gap-y-4">
+              <div className="flex md:flex-row md:gap-x-4  flex-col lg:flex-row gap-x-5 gap-y-4">
                 <div className="lg:w-[26.25rem] w-full h-[20rem] lg:h-[25rem] relative">
                   <img
                     src={rya}

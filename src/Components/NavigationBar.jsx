@@ -1,13 +1,17 @@
 import { Clock4, Search, TrendingUp } from "lucide-react";
+import LeftSideNavbar from "./LeftSideNavbar";
 
 const NavigationBar = () => {
   return (
     <>
-      <div className="border-y border-solid border-gray-300">
-        <ul className="flex justify-between items-center w-[65%] mx-auto">
+      <div className="border-y border-solid border-gray-300 ">
+        {/* <LeftSideNavbar /> */}
+        <ul className="lg:flex justify-between items-center w-[65%] hidden px-4 mx-auto">
           <ul className="flex items-center whitespace-nowrap gap-x-7 font-semibold py-2">
-            <li>होमपेज</li>
-            <li className="flex items-center gap-x-1 relative group ">
+            <li className="cursor-pointer hover:text-red-700 transition-all duration-300">
+              होमपेज
+            </li>
+            <li className="flex items-center gap-x-1 relative group cursor-pointer hover:text-red-700 transition-all duration-300 ">
               राजनीति
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -52,8 +56,10 @@ const NavigationBar = () => {
                 </li>
               </ul>
             </li>
-            <li>नेपालप्रेस</li>
-            <li className="flex gap-x-1 items-center relative group ">
+            <li className="cursor-pointer hover:text-red-700 transition-all duration-300">
+              नेपालप्रेस
+            </li>
+            <li className="flex gap-x-1 items-center relative group cursor-pointer hover:text-red-700 transition-all duration-300 ">
               नेपाल पैरवी
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -83,13 +89,25 @@ const NavigationBar = () => {
                 </li>
               </ul>
             </li>
-            <li>समाज चित्र </li>
-            <li>बित्त प्रेस</li>
-            <li>कला प्रेस</li>
-            <li>खेल</li>
-            <li>स्वास्थ्य जीवनशैली</li>
-            <li>प्रवास</li>
-            <li className="flex gap-x-1 items-center relative  group  ">
+            <li className="cursor-pointer hover:text-red-700 transition-all duration-300">
+              समाज चित्र{" "}
+            </li>
+            <li className="cursor-pointer hover:text-red-700 transition-all duration-300">
+              बित्त प्रेस
+            </li>
+            <li className="cursor-pointer hover:text-red-700 transition-all duration-300">
+              कला प्रेस
+            </li>
+            <li className="cursor-pointer hover:text-red-700 transition-all duration-300">
+              खेल
+            </li>
+            <li className="cursor-pointer hover:text-red-700 transition-all duration-300">
+              स्वास्थ्य जीवनशैली
+            </li>
+            <li className="cursor-pointer hover:text-red-700 transition-all duration-300">
+              प्रवास
+            </li>
+            <li className="flex gap-x-1 items-center relative  group cursor-pointer hover:text-red-700 transition-all duration-300 ">
               विविध
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -136,17 +154,32 @@ const NavigationBar = () => {
             </li>
           </ul>
           <ul className="flex gap-x-5 font-semibold p-3">
-            <li className="w-[1.5rem] h-[1.5rem] rounded-full bg-red-700 text-white text-[1rem] p-1 box-content text-center">
+            <li className="w-[1.5rem] h-[1.5rem] rounded-full bg-red-700 text-white text-[1rem] p-1 box-content text-center cursor-pointer hover:text-blue-950 transition-all duration-300">
               EN
             </li>
             <li>
-              <Clock4 size={30} strokeWidth={1.25} stroke="red" />
+              <Clock4
+                size={30}
+                strokeWidth={1.25}
+                stroke="red"
+                className="cursor-pointer"
+              />
             </li>
             <li>
-              <TrendingUp size={30} strokeWidth={1.25} stroke="red" />
+              <TrendingUp
+                size={30}
+                strokeWidth={1.25}
+                stroke="red"
+                className="cursor-pointer "
+              />
             </li>
             <li>
-              <Search size={30} strokeWidth={1.25} stroke="red" />
+              <Search
+                size={30}
+                strokeWidth={1.25}
+                stroke="red"
+                className="cursor-pointer "
+              />
             </li>
           </ul>
         </ul>

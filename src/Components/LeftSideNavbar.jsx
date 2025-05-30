@@ -1,52 +1,78 @@
 import React from "react";
+import logo from "../assets/logo.png";
+import { Menu } from "lucide-react";
+import { RxHamburgerMenu } from "react-icons/rx";
 
 const LeftSideNavbar = () => {
   return (
     <>
-      <div className="w-[15%] bg-[#191919] text-white">
-        <ul>
-          <li>होमपेज</li>
-          <li>
-            <a>राजनीति</a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="bi bi-chevron-down"
-              viewBox="0 0 16 16"
-            ></svg>
-          </li>
-          <li>नेपालप्रेस</li>
-          <li>
-            <a>नेपाल पैरवी</a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="bi bi-chevron-down"
-              viewBox="0 0 16 16"
-            ></svg>
-          </li>
-          <li>समाज चित्र</li>
-          <li>बित्त प्रेस</li>
-          <li>कला प्रेस</li>
-          <li>खेल</li>
-          <li>स्वास्थ्य जीवनशैली</li>
-          <li>प्रवास</li>
-          <li>
-            <a>विविध</a>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="bi bi-chevron-down"
-              viewBox="0 0 16 16"
-            ></svg>
-          </li>
-        </ul>
+      <div>
+        <input type="checkbox" name="close" id="name" className="hidden peer" />
+        <div className=" peer:checked:-translate-x-full transition-transform duration-500 h-[100vh] w-[250px] fixed top-0 left-0 group bg-[#191919] flex flex-col gap-y-5 py-2 text-2xl text-white">
+          <label htmlFor="name" className="self-end mr-10 mt-6 cursor-pointer">
+            <RxHamburgerMenu size={25} color="white" />
+          </label>
+
+          <ul>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer">
+              होमपेज
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer flex gap-x-5">
+              <a>राजनीति</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              ></svg>
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer">
+              नेपालप्रेस
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer flex gap-x-5">
+              <a>नेपाल पैरवी</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="White"
+                className="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              ></svg>
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer">
+              समाज चित्र
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer">
+              बित्त प्रेस
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer">
+              कला प्रेस
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer">
+              खेल
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer">
+              स्वास्थ्य जीवनशैली
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer">
+              प्रवास
+            </li>
+            <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 flex gap-x-5">
+              <a>विविध</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                className="bi bi-chevron-down"
+                viewBox="0 0 16 16"
+              ></svg>
+            </li>
+          </ul>
+        </div>
       </div>
     </>
   );

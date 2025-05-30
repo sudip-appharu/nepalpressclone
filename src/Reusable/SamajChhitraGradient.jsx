@@ -2,7 +2,7 @@ import React from "react";
 
 const SamajChhitraGradient = ({ image, text }) => {
   return (
-    <div className=" relative group overflow-hidden">
+    <div className=" sm:w-[50%] md:w-[50%] relative group overflow-hidden">
       <div className="lg:w-[18rem] w-full h-auto lg:h-[25rem]">
         <img
           src={image}

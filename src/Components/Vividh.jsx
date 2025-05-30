@@ -21,7 +21,7 @@ const Vividh = () => {
         <div className="flex lg:flex-row flex-col gap-x-10">
           <div className="shadow-md lg:w-[33%] w-full p-2">
             <Topics heading={`प्रवास `} />
-            <div className="lg:w-[21.18rem] w-full">
+            <div className="lg:w-[21.18rem] w-full mb-10">
               <div className="w-full lg:h-[10.93rem] ">
                 <img src={UAE} alt="" className="maintain-image" />
               </div>
@@ -48,7 +48,7 @@ const Vividh = () => {
           </div>
           <div className="shadow-md   w-full lg:w-[33%] p-2">
             <Topics heading={`प्रविधि `} />
-            <div className="  w-full lg:w-[21.18rem]">
+            <div className="  w-full lg:w-[21.18rem] mb-10">
               <div className="  w-full lg:w-full lg:h-[10.93rem] ">
                 <img src={it} alt="" className="maintain-image" />
               </div>
@@ -74,7 +74,7 @@ const Vividh = () => {
           </div>
           <div className="shadow-md  w-full lg:w-[33%] p-2">
             <Topics heading={`टापनटिपन `} />
-            <div className=" w-full lg:w-[21.18rem]">
+            <div className=" w-full lg:w-[21.18rem] mb-10">
               <div className="w-full lg:h-[10.93rem] ">
                 <img src={buffalo} alt="" className="maintain-image" />
               </div>

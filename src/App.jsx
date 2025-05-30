@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <div className="font-mukta">
-        <div className="flex flex-col gap-y-5 mb-10  ">
+        <div className="flex flex-col gap-y-5 mb-10 relative ">
           <Header />
           <NavigationBar />
 
