@@ -20,11 +20,19 @@ import KalaPress from "./Components/KalaPress";
 import Video from "./Components/Video";
 import Vividh from "./Components/Vividh";
 import Footer from "./Components/Footer";
+import { RxHamburgerMenu } from "react-icons/rx";
+import logo from "./assets/logo.png";
+import DateAndTime from "./Components/DateAndTime";
 
 function App() {
   return (
     <>
       <div className="font-mukta">
+        <div className="sticky top-0 pt-4 md:top-5 bg-white w-screen py-1 cursor-pointer  lg:hidden z-100 px-4 flex justify-between items-center ">
+          <RxHamburgerMenu size={30} />
+          <DateAndTime />
+          <img src={logo} alt="" className=" h-[1rem] w-auto " />
+        </div>
         <div className="flex flex-col gap-y-5 mb-10 relative ">
           <Header />
           <NavigationBar />

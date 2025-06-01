@@ -1,11 +1,9 @@
 import { Clock4, Search, TrendingUp } from "lucide-react";
-import LeftSideNavbar from "./LeftSideNavbar";
 
 const NavigationBar = () => {
   return (
     <>
       <div className="border-y border-solid border-gray-300 ">
-        {/* <LeftSideNavbar /> */}
         <ul className="lg:flex justify-between items-center w-[65%] hidden px-4 mx-auto">
           <ul className="flex items-center whitespace-nowrap gap-x-7 font-semibold py-2">
             <li className="cursor-pointer hover:text-red-700 transition-all duration-300">

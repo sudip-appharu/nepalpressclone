@@ -6,7 +6,7 @@ import { Search } from "lucide-react";
 
 const Header = () => {
   return (
-    <div className="w-full px-4 mt-10">
+    <div className="w-full px-4 mt-10 relative">
       <div className="flex flex-col md:flex-row justify-between items-center max-w-screen-lg mx-auto gap-4">
         <div className="w-full md:w-auto flex flex-col md:flex-row md:items-center md:gap-x-6">
           <img src={logo} alt="Logo" className="w-auto max-w-[200px] self-center" />
