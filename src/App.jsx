@@ -36,7 +36,7 @@ function App() {
             <RxHamburgerMenu
               size={30}
               onClick={() => setIsNavOpen(true)}
-              className={` transition-transform duration-500 ${
+              className={` transition-transform duration-1000 ${
                 isNavOpen && `rotate-90`
               }`}
             />

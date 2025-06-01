@@ -26,7 +26,7 @@ const NavigationBar = () => {
                   d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
                 />
               </svg>
-              <ul className="group-hover:block hidden absolute top-10  bg-[#f7efef] px-4 py-2 text-xl ">
+              <ul className="group-hover:block hidden absolute top-6  bg-[#f7efef] px-4 py-2 text-xl ">
                 <li className="border-b border-solid border-gray-300 py-4 cursor-pointer hover:text-blue-700 transition-all duration-300">
                   नेकपा एमाले{" "}
                 </li>
@@ -74,7 +74,7 @@ const NavigationBar = () => {
                   d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
                 />
               </svg>
-              <ul className="group-hover:block hidden absolute top-10  bg-[#f7efef] px-4 py-2 text-xl ">
+              <ul className="group-hover:block hidden absolute top-6  bg-[#f7efef] px-4 py-2 text-xl ">
                 <li className="border-b border-solid border-gray-300 py-4 cursor-pointer hover:text-blue-700 transition-all duration-300">
                   नेपाल टक
                 </li>
@@ -122,7 +122,7 @@ const NavigationBar = () => {
                   d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"
                 />
               </svg>
-              <ul className="group-hover:block hidden absolute top-10  bg-[#f7efef] px-4 py-2 text-xl ">
+              <ul className="group-hover:block hidden absolute top-6  bg-[#f7efef] px-4 py-2 text-xl ">
                 <li className="border-b border-solid border-gray-300 py-4 cursor-pointer hover:text-blue-700 transition-all duration-300">
                   टि 20 विश्वकप 2024
                 </li>
