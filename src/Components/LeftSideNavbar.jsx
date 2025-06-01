@@ -10,8 +10,10 @@ const LeftSideNavbar = () => {
     <>
       <div>
         <div
-          className={` h-[100vh] w-[250px] fixed top-0 left-0 group bg-[#191919] ${
-            isNavOpen ? `flex` : `hidden`
+          className={` h-[100vh] w-[250px] fixed transition-all duration-500 top-0 left-0 group bg-[#191919] ${
+            isNavOpen
+              ? `opacity-100 pointer-events-auto`
+              : `opacity-0 pointer-events-none`
           } flex-col gap-y-5 py-2 text-2xl text-white z-100`}
         >
           <ul>
