@@ -1,18 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
 import logo from "../assets/logo.png";
 import { Menu } from "lucide-react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import User from "../context/user";
 
 const LeftSideNavbar = () => {
+  let { isNavOpen } = useContext(User);
   return (
     <>
       <div>
-        <input type="checkbox" name="close" id="name" className="hidden peer" />
-        <div className=" peer:checked:-translate-x-full transition-transform duration-500 h-[100vh] w-[250px] fixed top-0 left-0 group bg-[#191919] flex flex-col gap-y-5 py-2 text-2xl text-white">
-          <label htmlFor="name" className="self-end mr-10 mt-6 cursor-pointer">
-            <RxHamburgerMenu size={25} color="white" />
-          </label>
-
+        <div
+          className={` h-[100vh] w-[250px] fixed top-0 left-0 group bg-[#191919] ${
+            isNavOpen ? `flex` : `hidden`
+          } flex-col gap-y-5 py-2 text-2xl text-white z-100`}
+        >
           <ul>
             <li className="pl-4 text-left py-4 border-b border-solid border-gray-600 hover:bg-[#222221] cursor-pointer">
               होमपेज

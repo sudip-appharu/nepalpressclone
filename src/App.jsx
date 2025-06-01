@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
@@ -23,13 +23,15 @@ import Footer from "./Components/Footer";
 import { RxHamburgerMenu } from "react-icons/rx";
 import logo from "./assets/logo.png";
 import DateAndTime from "./Components/DateAndTime";
+import User from "./context/user";
 
 function App() {
+  const { isNavOpen, setIsNavOpen } = useContext(User);
   return (
     <>
       <div className="font-mukta">
-        <div className="sticky top-0 pt-4 md:top-5 bg-white w-screen py-1 cursor-pointer  lg:hidden z-100 px-4 flex justify-between items-center ">
-          <RxHamburgerMenu size={30} />
+        <div className="sticky top-0 pt-4 md:top-5 bg-white w-screen py-1 cursor-pointer  lg:hidden z-100 pl-4 pr-8 flex flex-row-reverse justify-between items-center ">
+          <RxHamburgerMenu size={30} onClick={() => setIsNavOpen(!isNavOpen)} />
           <DateAndTime />
           <img src={logo} alt="" className=" h-[1rem] w-auto " />
         </div>
